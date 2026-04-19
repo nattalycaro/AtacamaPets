@@ -1,50 +1,62 @@
+
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tu CSS externo -->
     <link rel="stylesheet" href="assets/style.css">
+
     <style>
-        /* Colores principales */
+        /* Variables globales */
         :root {
-            --color-principal: #4A90E2; /* Azul */
-            --color-secundario: #F5A623; /* Naranja */
+            --color-principal: #4A90E2;
+            --color-secundario: #F5A623;
         }
 
         /* Navbar */
         .navbar {
-            background-color: var(--color-principal);
-        }
-        .navbar .nav-link, .navbar .navbar-brand {
-            color: white;
-        }
-        .navbar .nav-link:hover {
-            color: var(--color-secundario);
-        }
-        .btn-primary {
-            background-color: var(--color-secundario);
-            border-color: var(--color-secundario);
-        }
-        .btn-primary:hover {
-            background-color: #e08f1f;
-            border-color: #e08f1f;
+            background-color: var(--color-principal) !important;
         }
 
-        /* Sección Hero */
+        .navbar .nav-link,
+        .navbar .navbar-brand {
+            color: white !important;
+        }
+
+        .navbar .nav-link:hover {
+            color: var(--color-secundario) !important;
+        }
+
+        /* Botones */
+        .btn-primary {
+            background-color: var(--color-secundario) !important;
+            border-color: var(--color-secundario) !important;
+        }
+
+        .btn-primary:hover {
+            background-color: #e08f1f !important;
+            border-color: #e08f1f !important;
+        }
+
+        /* Hero */
         .hero {
-            background-color: #eef6fc; /* Muy sutil azul claro */
+            background-color: #eef6fc;
             padding: 80px 0;
         }
 
-        /* Sección Servicios */
+        /* Servicios */
         .servicios .card {
             border: none;
-            transition: transform 0.3s;
-        }
-        .servicios .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        /* Sección Especialidades */
+        .servicios .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Especialidades */
         #especialidades {
-            background-color: #fff8f0; /* Sutil naranja pálido */
+            background-color: #fff8f0;
             padding: 60px 0;
         }
 
@@ -52,10 +64,14 @@
         footer {
             background-color: var(--color-principal);
             color: white;
+            padding: 20px 0;
         }
+
         footer a {
             color: white;
+            text-decoration: none;
         }
+
         footer a:hover {
             color: var(--color-secundario);
         }
