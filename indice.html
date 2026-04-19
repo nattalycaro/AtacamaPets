@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtacamaPets - Clinica Veterinaria</title>
+<!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <!-- todo: navbar, botones de navegacion, logo empresarial  -->
+     <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Atacama<strong>Pets</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <!-- BOTONES NAVBAR -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+
+                        <li class="nav-item ms-lg-4 active">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item ms-lg-4 active">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                        
+                        <li class="nav-item ms-lg-4 active">
+                            <a type="button" class="btn btn-primary" href="#contacto">Iniciar Sesion</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HERO -->
+    <!-- todo: Imagenes, mision-vision, quienes somos, que hacemos, ubicacion, etc -->
+    <head>
+    ...
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        /* Colores principales */
+        :root {
+            --color-principal: #4A90E2; /* Azul */
+            --color-secundario: #F5A623; /* Naranja */
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: var(--color-principal);
+        }
+        .navbar .nav-link, .navbar .navbar-brand {
+            color: white;
+        }
+        .navbar .nav-link:hover {
+            color: var(--color-secundario);
+        }
+        .btn-primary {
+            background-color: var(--color-secundario);
+            border-color: var(--color-secundario);
+        }
+        .btn-primary:hover {
+            background-color: #e08f1f;
+            border-color: #e08f1f;
+        }
+
+        /* Sección Hero */
+        .hero {
+            background-color: #eef6fc; 
+            padding: 80px 0;
+        }
+
+        /* Sección Servicios */
+        .servicios .card {
+            border: none;
+            transition: transform 0.3s;
+        }
+        .servicios .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Sección Especialidades */
+        #especialidades {
+            background-color: #fff8f0; 
+            padding: 60px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-principal);
+            color: white;
+        }
+        footer a {
+            color: white;
+        }
+        footer a:hover {
+            color: var(--color-secundario);
+        }
+    </style>
+</head>
+    <main>
+        <section class="hero container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 texto-hero"><br><br>
+                    <h1 class="display-4 fw-bold mb-3">El Mejor Cuidado para tus Mascotas</h1>
+                    <p class="lead mb-4"> 
+                        Medicina preventiva, urgencias y especialidades.</p>
+
+                    <a href="#" class="btn btn-primary btn-lg" style="width: 200px;">
+                        Agendar Consulta
+                    </a>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <img src="assets/img/hero_img1.jpg" alt="Veterinarian Taking Care of a Dog">
+                    </div>
+            </div>
+
+        </section>
+        
+        <!-- SECCION SERVICIOS -->
+
+          <section class="servicios container mt-5" id="servicios">
+    <h2 class="text-center mb-4">Nuestros Servicios</h2>
+    
+    <div class="row">
+
+        <!-- Servicio 1 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="assets/img/Consultas.jpg" class="card-img-top" alt="Consulta veterinaria">
+                <div class="card-body">
+                    <h5 class="card-title">Consultas Generales</h5>
+                    <p class="card-text">
+                        Atención médica completa para mascotas, chequeos preventivos y diagnóstico de enfermedades.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="assets/img/Vacunacion.jpg" class="card-img-top" alt="Vacunación de mascotas">
+                <div class="card-body">
+                    <h5 class="card-title">Vacunación</h5>
+                    <p class="card-text">
+                        Programas de vacunación para proteger a tu mascota contra enfermedades comunes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="assets/img/Urgencias.jpg" class="card-img-top" alt="Urgencias veterinarias">
+                <div class="card-body">
+                    <h5 class="card-title">Urgencias 24/7</h5>
+                    <p class="card-text">
+                        Atención inmediata ante emergencias médicas para garantizar la seguridad de tu mascota.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SECCION NUESTRAS ESPECIALIDADES-->
+    <section id="especialidades" class="py-5"> <h2 class="services-title mb-5">Nuestras Especialidades</h2>
+    
+    <div class="card-container">
+        <article class="card p-3">
+            <img src="assets/img/Medicina.jpg" class="card-img-top" alt="Veterinario realizando examen clínico">
+            <div class="card-body text-white">
+                <h3 class="h5 card-title mt-2">Medicina General</h3>
+                <p class="card-text small text-secondary">Chequeos preventivos y diagnósticos precisos para la salud diaria de tu mascota.</p>
+            </div>
+        </article>
+
+        <article class="card p-3">
+            <img src="assets/img/cirugia.jpg" class="card-img-top" alt="Mascota en área de cirugía">
+            <div class="card-body text-white">
+                <h3 class="h5 card-title mt-2">Cirugías Especializadas</h3>
+                <p class="card-text small text-secondary">Contamos con quirófano equipado para procedimientos de alta y baja complejidad.</p>
+            </div>
+        </article>
+
+        <article class="card p-3">
+            <img src="assets/img/peluqueria.jpeg" class="card-img-top" alt="Perro en peluquería canina">
+            <div class="card-body text-white">
+                <h3 class="h5 card-title mt-2">Peluquería y Estética</h3>
+                <p class="card-text small text-secondary">Baños sanitarios y cortes de raza para que luzcan siempre bien.</p>
+            </div>
+        </article>
+    </div>
+    
+</section>
+
+        <!-- SECCION INFORMACION EMPRESARIAL / QUIENES SOMOS -->
+        <section class="emp-info container" id="nosotros">
+            <h2>¿Quienes Somos?</h2>
+            <p>placeholder</p>
+            <div class="row">
+                <div style="color: white;">PlaceHolder</div>
+            </div>
+            
+        </section>
+
+        <!-- SECCION CONTACTOS -->
+        <section class="emp-contact" id="contacto">
+            <h2>Contactanos</h2>
+            <p>PlaceHolder</p>
+
+            <div class="row">
+                <div style="color: white;">placceholder</div>
+            </div>
+
+        </section>
+         
+        <section class="emp-ubication">
+            <h2>Donde Encontrarnos</h2>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.554534727577!2d-70.34828170481663!3d-27.358946226211618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x969803ed8690e2bf%3A0xdbc12fea97072124!2sLas%20Heras%20344%2C%201530000%20Copiap%C3%B3%2C%20Atacama!5e0!3m2!1ses-419!2scl!4v1776186924700!5m2!1ses-419!2scl" width="650" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </main>
+    <!-- FOOTER -->
+     <!-- TODO: contactos, acerca de nosotros -->
+    <footer class="footer-container">
+    <div class="container p-4">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-12 mb-4">
+                <img src="assets/img/LOGO_ATACAMAPETS.JPG" alt="Logo Atacama Pets" style="width: 120px; margin-bottom: 15px;">
+                <p>📧 atacamapets@gmail.com</p>
+                <p>📍 Las Heras 344, Copiapó, Atacama</p>
+                <p>📞 +56 9 7618 1520</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contactos">Contacto</a></li>
+                    <li><a href="#">Agendar Hora</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <h4>Horario</h4>
+                <p>
+                    Lunes a Domingo <br>
+                    09:00 – 13:30 <br>
+                    14:30 – 20:00
+                </p>
+            </div>
+        
+
+        </div>
+    </div>
+</footer>
+    </body>
+</html>
