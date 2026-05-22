@@ -58,3 +58,20 @@ footer {
 .dark-mode #especialidades p {
     color: white !important;
 }
+
+/* ARREGLAR "NUESTRAS ESPECIALIDADES" EN MODO OSCURO */
+body.dark-mode #especialidades {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode #especialidades h2 {
+    color: white !important;
+}
+
+body.dark-mode #especialidades h3 {
+    color: white !important;
+}
+
+body.dark-mode #especialidades p {
+    color: white !important;
+}
