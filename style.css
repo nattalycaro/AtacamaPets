@@ -45,3 +45,8 @@ footer {
     color: white;
     border-color: #555;
 }
+
+ Nuestras Especialidades
+.dark-mode .services-title {
+    color: white;
+}
