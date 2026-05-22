@@ -24,3 +24,26 @@ document.addEventListener("DOMContentLoaded", function () {
     buscador.addEventListener("input", filtrarServicios);
     filtro.addEventListener("change", filtrarServicios);
 });
+
+
+// BOTÓN MODO OSCURO
+const botonModo = document.getElementById("modoOscuroBtn");
+
+// Revisar si estaba activado antes
+if (localStorage.getItem("modoOscuro") === "activo") {
+    document.body.classList.add("dark-mode");
+}
+
+// Cambiar modo al hacer click
+botonModo.addEventListener("click", function () {
+
+    document.body.classList.toggle("dark-mode");
+
+    // Guardar preferencia
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("modoOscuro", "activo");
+    } else {
+        localStorage.removeItem("modoOscuro");
+    }
+
+});
