@@ -48,5 +48,5 @@ footer {
 
  Nuestras Especialidades
 .dark-mode .services-title {
-    color: white;
+    color: white !important;
 }
