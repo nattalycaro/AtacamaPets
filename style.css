@@ -50,3 +50,11 @@ footer {
 .dark-mode .services-title {
     color: black !important;
 }
+
+/* MODO OSCURO - arreglar títulos */
+.dark-mode #especialidades h2,
+.dark-mode .services-title,
+.dark-mode #especialidades .card-title,
+.dark-mode #especialidades p {
+    color: white !important;
+}
