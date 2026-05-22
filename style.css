@@ -1,79 +1,47 @@
 
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+/* TRANSICIÓN SUAVE */
+body,
+.navbar,
+.card,
+.emp-info,
+footer {
+    transition: all 0.3s ease;
+}
 
-    <!-- Tu CSS externo -->
-    <link rel="stylesheet" href="assets/style.css">
+/* MODO OSCURO */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
 
-    <style>
-        /* Variables globales */
-        :root {
-            --color-principal: #4A90E2;
-            --color-secundario: #F5A623;
-        }
+.dark-mode .navbar {
+    background-color: #1f1f1f !important;
+}
 
-        /* Navbar */
-        .navbar {
-            background-color: var(--color-principal) !important;
-        }
+.dark-mode .hero {
+    background-color: #1a1a1a;
+}
 
-        .navbar .nav-link,
-        .navbar .navbar-brand {
-            color: white !important;
-        }
+.dark-mode .card {
+    background-color: #2a2a2a;
+    color: white;
+}
 
-        .navbar .nav-link:hover {
-            color: var(--color-secundario) !important;
-        }
+.dark-mode .card p {
+    color: #d1d1d1;
+}
 
-        /* Botones */
-        .btn-primary {
-            background-color: var(--color-secundario) !important;
-            border-color: var(--color-secundario) !important;
-        }
+.dark-mode .emp-info {
+    background-color: #111827;
+}
 
-        .btn-primary:hover {
-            background-color: #e08f1f !important;
-            border-color: #e08f1f !important;
-        }
+.dark-mode footer {
+    background-color: #1f1f1f;
+}
 
-        /* Hero */
-        .hero {
-            background-color: #eef6fc;
-            padding: 80px 0;
-        }
-
-        /* Servicios */
-        .servicios .card {
-            border: none;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .servicios .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Especialidades */
-        #especialidades {
-            background-color: #fff8f0;
-            padding: 60px 0;
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--color-principal);
-            color: white;
-            padding: 20px 0;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: var(--color-secundario);
-        }
-    </style>
-</head>
+.dark-mode input,
+.dark-mode select {
+    background-color: #2a2a2a;
+    color: white;
+    border-color: #555;
+}
